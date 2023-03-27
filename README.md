@@ -1,11 +1,28 @@
 # ratemyprofessor_dataset
-Every single review for Rate My Professor. Data was formatted to be used in a LSTM model, any usage of the teachers name in a review has been replaced with <TEACHER>
+Every single review for Rate My Professor. Data was formatted to be used in a LSTM model, any usage of the teachers name in a review has been replaced with \<TEACHER\>
 
 ## Format
 All reviews have the following format. 
 ```csv
 id,first_name,last_name,title,quality,difficulty,tags,comment,date,emotional_label,class,for_credit,attendence,would_take_again,grade,textbook
 ```
+Value meanings
+```
+id<int> - rate my professor teacher id
+first_name<str>
+last_name<str>
+title<str> - job
+quality<float> - teacher quality rating
+difficulty<float> - teacher difficulty
+tags<list<str>> - List of tags on the review
+emotional_label<enum> - 3 choices of awesome, average, awful
+class<str> - class the teacher taught
+attedence<bool> - was attendence mandatory
+would_take_again<bool> - would the reviewer retake the class
+grade<str> - grade recieved in the class
+textbook<bool> - was a textbook required
+```
+Some of the values are optional when posting a grade so for attendence, would take again, textbook and grade can be null.
 
 Sample
 ```csv
