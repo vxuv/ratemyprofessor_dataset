@@ -1,5 +1,5 @@
 # ratemyprofessor_dataset
-Every single review for Rate My Professor. Data was formatted to be used in a LTSM model, any usage of the teachers name in a review has been replaced with <TEACHER>
+Every single review for Rate My Professor. Data was formatted to be used in a LSTM model, any usage of the teachers name in a review has been replaced with <TEACHER>
 
 ## Format
 All reviews have the following format. 
